@@ -84,8 +84,10 @@ Check that the version of the package is updated in the [PyPi](https://pypi.org/
 
 
 ```
-cd doc make html
+cd doc
+make html
 cd ..
 mkdir -p docs
+touch docs/.nojekyll
 cp -r doc/build/html/* docs/
 ```
