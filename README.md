@@ -81,3 +81,11 @@ Check that the version of the package is updated in the [PyPi](https://pypi.org/
 
 ## Support
 - If you have any ideas on how to improve the project structure or want to propose new issues, let me know!
+
+
+```
+cd doc make html
+cd ..
+mkdir -p docs
+cp -r doc/build/html/* docs/
+```
