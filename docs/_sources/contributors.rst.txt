@@ -31,11 +31,11 @@ The following students and alumni have contributed to the development of this pa
    * - .. image:: _static/profile.jpg
          :width: 100px
          :alt: Profile
-     - **Austin Galm**
+     - **Nick Donato**
 
        - **Email:**
        - **LinkedIn:**
-       - **GitHub:** https://github.com/agalm94
+       - **GitHub:** https://github.com/Nick-Donato
 
    * - .. image:: _static/profile.jpg
          :width: 100px
@@ -49,20 +49,20 @@ The following students and alumni have contributed to the development of this pa
    * - .. image:: _static/profile.jpg
          :width: 100px
          :alt: Profile
-     - **Nick Donato**
-
-       - **Email:**
-       - **LinkedIn:**
-       - **GitHub:** https://github.com/Nick-Donato
-
-   * - .. image:: _static/profile.jpg
-         :width: 100px
-         :alt: Profile
      - **Thomas Lesniak**
 
        - **Email:**
        - **LinkedIn:**
        - **GitHub:** https://github.com/lesniakt
+
+   * - .. image:: _static/profile.jpg
+         :width: 100px
+         :alt: Profile
+     - **Austin Galm**
+
+       - **Email:**
+       - **LinkedIn:**
+       - **GitHub:** https://github.com/agalm94
 
    * - .. image:: _static/profile.jpg
          :width: 100px
