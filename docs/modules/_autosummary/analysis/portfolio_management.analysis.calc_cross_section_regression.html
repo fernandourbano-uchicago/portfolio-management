@@ -30,7 +30,7 @@
   <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'modules/_autosummary/analysis/portfolio_management.analysis.calc_cross_section_regression';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -107,8 +107,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Portfolio Management  documentation - Home"/>
+    <img src="../../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Portfolio Management  documentation - Home"/>
   
-    <p class="title logo__title">Portfolio Management  documentation</p>
   
 </a></div>
     
@@ -125,6 +131,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../getting_started.html">
     Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../contributors.html">
+    Contributors
   </a>
 </li>
 
@@ -173,7 +186,7 @@
           
           
           
-          <a href="https://github.com/yourusername/portfolio-management" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/fernando-urbano/portfolio-management" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -234,6 +247,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../contributors.html">
+    Contributors
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../index.html">
     API Reference
   </a>
@@ -268,7 +288,7 @@
           
           
           
-          <a href="https://github.com/yourusername/portfolio-management" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/fernando-urbano/portfolio-management" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -331,6 +351,67 @@
                   
   <section id="portfolio-management-analysis-calc-cross-section-regression">
 <h1>portfolio_management.analysis.calc_cross_section_regression<a class="headerlink" href="#portfolio-management-analysis-calc-cross-section-regression" title="Link to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="portfolio_management.analysis.calc_cross_section_regression">
+<span class="sig-name descname"><span class="pre">calc_cross_section_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">returns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periods_per_year</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provided_excess_returns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rf</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_mae</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intercept_cross_section</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_historical_premium</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_annualized_premium</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compare_premiums</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_indexes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_indexes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_before_keep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/portfolio_management/analysis.html#calc_cross_section_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#portfolio_management.analysis.calc_cross_section_regression" title="Link to this definition">#</a></dt>
+<dd><p>Performs a cross-sectional regression on the provided returns and factors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>returns</strong> (<em>pd.DataFrame</em><em> or </em><em>list</em>) – Time series of asset returns.</p></li>
+<li><p><strong>factors</strong> (<em>pd.DataFrame</em><em> or </em><em>list</em>) – Time series of factor data.</p></li>
+<li><p><strong>periods_per_year</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of periods per year for annualizing returns. If None, attempts to infer from <cite>returns</cite>.
+Defaults to None.</p></li>
+<li><p><strong>provided_excess_returns</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether <cite>returns</cite> are already excess returns (i.e., returns minus risk-free rate). If None,
+a warning is issued and it defaults to True. Defaults to None.</p></li>
+<li><p><strong>rf</strong> (<em>pd.Series</em><em>, </em><em>optional</em>) – Risk-free rate data, used if <cite>provided_excess_returns</cite> is False. Must have the same index as <cite>returns</cite>.
+Defaults to None.</p></li>
+<li><p><strong>return_model</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, returns the fitted regression model instead of a DataFrame of results. Defaults to False.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name/label for the regression. Defaults to None.</p></li>
+<li><p><strong>return_mae</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, calculates and returns mean absolute error (MAE) metrics. Defaults to True.</p></li>
+<li><p><strong>intercept_cross_section</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, includes an intercept in the cross-sectional regression. Defaults to True.</p></li>
+<li><p><strong>return_historical_premium</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, adds columns for the average (historical) factor premiums. Defaults to True.</p></li>
+<li><p><strong>return_annualized_premium</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, adds columns for the annualized factor premiums. Defaults to True.</p></li>
+<li><p><strong>compare_premiums</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, compares historical vs. estimated premiums in a single table. Defaults to False.</p></li>
+<li><p><strong>keep_columns</strong> (<em>list</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – Columns to keep in the final output. Defaults to None.</p></li>
+<li><p><strong>drop_columns</strong> (<em>list</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – Columns to drop from the final output. Defaults to None.</p></li>
+<li><p><strong>keep_indexes</strong> (<em>list</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – Indexes (rows) to keep in the final output. Defaults to None.</p></li>
+<li><p><strong>drop_indexes</strong> (<em>list</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – Indexes (rows) to drop from the final output. Defaults to None.</p></li>
+<li><p><strong>drop_before_keep</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, drops specified columns/indexes before keeping the specified ones. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>If <cite>return_model</cite> is False, returns a DataFrame containing cross-sectional regression results.</p></li>
+<li><p>If <cite>return_model</cite> is True, returns the fitted OLS model object.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame or statsmodels.regression.linear_model.RegressionResults</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If <cite>rf</cite> is provided but its index length does not match <cite>returns</cite> when <cite>provided_excess_returns</cite> is False.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">portfolio_management.analysis</span><span class="w"> </span><span class="kn">import</span> <span class="n">calc_cross_section_regression</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">returns_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;AssetA&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;AssetB&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.005</span><span class="p">,</span> <span class="mf">0.007</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.002</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">factors_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;Factor1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.002</span><span class="p">,</span> <span class="mf">0.003</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;Factor2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.0007</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run a cross-sectional regression and get a summary DataFrame:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">calc_cross_section_regression</span><span class="p">(</span><span class="n">returns_df</span><span class="p">,</span> <span class="n">factors_df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </section>
 
 
@@ -353,6 +434,18 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#portfolio_management.analysis.calc_cross_section_regression"><code class="docutils literal notranslate"><span class="pre">calc_cross_section_regression()</span></code></a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
@@ -397,7 +490,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     <br/>
   </p>
 </div>
